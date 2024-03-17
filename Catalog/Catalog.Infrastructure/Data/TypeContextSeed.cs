@@ -28,4 +28,5 @@ namespace Catalog.Infrastructure.Data
                 }
             }
         }
+    }
 }
