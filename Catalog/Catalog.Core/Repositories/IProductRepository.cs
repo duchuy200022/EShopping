@@ -1,4 +1,5 @@
 ﻿using Catalog.Core.Entities;
+using Catalog.Core.Specs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Catalog.Core.Repositories
         Task<Product> CreateProduct(Product product);
         Task<bool> UpdateProduct(Product product);
         Task<bool> DeleteProduct(string id);
-        Task<IEnumerable<Product>> GetProducts();
+        Task<Pagination<Product>> GetProducts(CatalogSpecParams catalogSpecParams);
 
     }
 }
